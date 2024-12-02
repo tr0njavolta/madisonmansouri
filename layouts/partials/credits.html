@@ -1,9 +1,18 @@
 <div class="credits-section">
-  <h2>Credits</h2>
+  <h3>Credits</h3>
   <ul>
     {{ range .Params.credits }}
     <li>
-      <strong>{{ .role }}</strong>: {{ .name }}
+      <strong>{{ .role }}</strong>:
+      <ul>
+        {{ range .projects }}
+        <li>
+          <strong>{{ .title }}</strong>
+          {{ if .location }} ({{ .location }}){{ end }}
+          {{ if .notes }} - {{ .notes }}{{ end }}
+        </li>
+        {{ end }}
+      </ul>
     </li>
     {{ end }}
   </ul>
