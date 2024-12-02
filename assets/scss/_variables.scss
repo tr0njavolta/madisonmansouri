@@ -1,17 +1,17 @@
-//site color variables
-$body-color: #fff;
-$primary-color: #EAA4A4;
-$secondary-color: #ADD6D2;
-$text-color: #9D9EA5;
-$text-color-dark: #00113E;
-$site-ease: cubic-bezier(0.36, 0.03, 0, 0.91);
-$gray: #F7F9FF;
-$dark-gray: #646569;
+// Site color variables
+$body-color: #FDFCFB; // Subtle off-white with a hint of warmth
+$primary-color: #8B5E83; // Dusty mauve, sophisticated and theatrical
+$secondary-color: #5A6473; // Deep muted slate blue, professional and calming
+$text-color: #3C3C3C; // Neutral dark gray for clear readability
+$text-color-dark: #1A1A1A; // Rich charcoal for bold, high-contrast text
+$site-ease: cubic-bezier(0.4, 0, 0.2, 1); // Smooth animations for a polished feel
+$gray: #E8E8E8; // Light, neutral gray for backgrounds and subtle separation
+$dark-gray: #7B7B7B; // Soft medium gray for secondary text and accents
 
-// solid colors
-$white: #fff;
-$black: #000;
+// Solid colors
+$white: #FFFFFF; // Clean white for highlights
+$black: #000000; // True black for sharp contrasts
 
 // Font Variables
-$primary-font: 'Josefin Sans', sans-serif;
-$secondary-font: 'Montserrat', sans-serif;
+$primary-font: 'Josefin Sans', sans-serif; // Elegant and expressive for headings
+$secondary-font: 'Montserrat', sans-serif; // Clean and modern for body text

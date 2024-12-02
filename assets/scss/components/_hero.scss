@@ -1,58 +1,96 @@
-.site-hero{
+$tagline-color: #ffffff; /* Default color for the tagline */
+$tagline-font-size: 2.2rem; /* Default font size for the tagline */
+
+.site-hero {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   background-size: cover;
   background-position: center center;
   display: flex;
-  align-items: center;
+  align-items: flex-end; /* Align content to the bottom */
   justify-content: center;
-  @include desktop{
+  padding-bottom: 20px;
+
+  @include desktop {
     height: auto;
-    padding: 200px 0;
+    padding: 100px 0 0;
   }
-  @include mobile{
-    padding: 150px 0;
+  @include mobile {
+    padding: 50px 0 0;
   }
-  &-content{
-    h1{
-      margin-bottom: 75px;
-      @include desktop-lg{
+
+  &-content {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 2.5rem; /* Larger font size */
+      font-weight: 700; /* Bold font */
+      color: #ffffff; /* Pure white for readability */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Strong shadow for contrast */
+      @include desktop-lg {
         font-size: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
       }
-      @include mobile{
+      @include mobile {
         font-size: 40px;
       }
     }
-    &-buttons{
+
+    h6 {
+      font-size: $tagline-font-size; /* Use dynamic font size */
+      font-weight: 500; /* Medium weight */
+      color: $tagline-color; /* Use dynamic color */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for better visibility */
+      margin: 0;
+      text-align: center;
+    }
+
+    &-buttons {
       margin: 0;
       padding: 0;
-      li{
+      li {
         display: inline-block;
-        @include mobile{
+
+        @include mobile {
           display: block;
         }
-        &:not(:last-child){
+
+        &:not(:last-child) {
           margin-right: 30px;
-          @include mobile{
+          @include mobile {
             margin-right: 0;
             margin-bottom: 20px;
           }
         }
-        .btn{
+
+        .btn {
           font-weight: 600;
-          @include mobile{
+          background-color: transparent; /* Transparent background for minimal design */
+          color: #ffffff; /* White button text */
+          border: 2px solid #ffffff; /* White border for better visibility */
+          border-radius: 5px;
+          padding: 10px 20px;
+
+          @include mobile {
             width: 90%;
             margin: 0 auto;
             display: block;
+          }
+
+          &:hover {
+            color: #000; /* Black text on hover */
+            background-color: #ffffff; /* White background on hover */
           }
         }
       }
     }
   }
-  &-scroll{
+
+  &-scroll {
     position: absolute;
-    left: 50%; bottom: 70px;
+    left: 50%;
+    bottom: 70px;
     transform: translateX(-50%);
   }
 }

@@ -1,0 +1,59 @@
+baseURL       = "http://madisonmansouri.com/"
+languageCode  = "en-us"
+title         = "Madison Mansouri"
+theme         = "roxo-hugo"
+summarylength = 25
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Portfolio"
+    url     = "portfolio"
+    weight  = 3
+# Site Params
+[params]
+  logo = "images/logo.png"
+  logo_footer = "images/logo-footer.png"
+  favicon_icon = "images/favicon.ico"
+  favicon_shortcut_icon = "images/favicon.png"
+  custom_stylesheets = []   # [ "scss/my_1.scss", "scss/my_2.scss" ]
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/hero-background.jpg"
+    heading               = "Madison Mansouri"
+    tagline               = "Director | Producer | Dramaturg"
+  [params.portfolio]
+    enable    = true
+    title     = "RECENT WORKS"
+    view_project = "view project"
+    more_works = "MORE WORKS"
+
+  [params.footer]
+    params.footer.qr_print = false
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Contact Me"
+        [[params.footer.social.link]]
+          name = "madison.mansouri@gmail.com"
+          url  = "masison.mansouri@gmail.com"
+        [[params.footer.social.link]]
+          name = "LinkedIn"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "#"

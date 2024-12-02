@@ -29,6 +29,11 @@
       letter-spacing: 1px;
     }
   }
+  &-content {
+  flex: 1;
+  padding: 1rem;
+  }
+
   &-description{
     width: 60%;
     padding-left: 50px;
@@ -42,4 +47,28 @@
       margin-bottom: 0;
     }
   }
+
+.upcoming-events,
+.credits-section {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-events ul,
+.credits-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.upcoming-events li,
+.credits-section li {
+  margin-bottom: 0.5rem;
+}
+
+.event-item strong,
+.credit-item strong {
+  color: #555;
+}
 }

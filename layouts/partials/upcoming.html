@@ -1,0 +1,11 @@
+<div class="upcoming-events">
+  <h2>Upcoming Events</h2>
+  <ul>
+    {{ range .Params.upcoming }}
+    <li>
+      <strong>{{ .title }}</strong> - {{ .date }}
+      {{ if .location }}<br><span>{{ .location }}</span>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>

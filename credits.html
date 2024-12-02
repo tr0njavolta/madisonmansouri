@@ -1,0 +1,10 @@
+<div class="credits-section">
+  <h2>Credits</h2>
+  <ul>
+    {{ range .Params.credits }}
+    <li>
+      <strong>{{ .role }}</strong>: {{ .name }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
