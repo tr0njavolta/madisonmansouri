@@ -21,7 +21,9 @@ jobs:
         sudo mv hugo /usr/local/bin/
 
     - name: Debug SCSS structure
-      run: ls -R assets/scss
+      run: |
+        echo "Listing SCSS files:"
+        ls -R assets/scss
 
     - name: Build Hugo site
       run: hugo
