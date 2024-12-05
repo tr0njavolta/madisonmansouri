@@ -13,11 +13,12 @@ by Emily Pope
 
 **Roles & Team:**  
 - **Director:** Madison M. Mansouri  
-- **Stage Manager:** Cameron Skillen  
-- **Scenic Design:** Jamie Jaymes & Kevin Collins  
-- **Costumes:** Patti Rogers  
-- **Sound Design:** Jamie Jaymes  
-- **Painting:** Reilly Chisholm  
+- **Stage Manager:** Eli Boldt 
+- **Scenic Design:** Sarah Wahrmund
+- **Costumes:** Sebastian Van Horn
+- **Sound:** Monica Gardner
+- **Lighting:** Liv Jin 
+- **Props:** Kass Parrish
 
 ---
 
