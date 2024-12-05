@@ -15,8 +15,13 @@ jobs:
 
     - name: Install Hugo
       run: |
-        sudo apt-get update
-        sudo apt-get install -y hugo
+        HUGO_VERSION=0.92.2
+        wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+        tar -xvf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+        sudo mv hugo /usr/local/bin/
+
+    - name: Debug SCSS files
+      run: ls -R assets/scss/components
 
     - name: Build Hugo site
       run: hugo
@@ -26,5 +31,4 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: your-s3-region
-      run: |
-        aws s3 sync public/ s3://madisonmansouri.com/ --delete
+      run: aws s3 sync public/ s3://madisonmansouri.com/ --delete
